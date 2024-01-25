@@ -1,5 +1,5 @@
 // This is to Indicate that this file is part of the main package.
-package main
+package handler
 
 import (
 	"context"
@@ -226,7 +226,7 @@ func DeleteUser(w http.ResponseWriter, r *http.Request) {
 	w.WriteHeader(http.StatusNoContent)
 }
 
-func main() {
+func Main() {
 	// Creating a new Gorilla Mux router.
 	router := mux.NewRouter()
 
