@@ -1,5 +1,5 @@
 // This is to Indicate that this file is part of the main package.
-package handler
+package main
 
 // Importing necessary packages for the server functionality.
 import (
@@ -35,7 +35,7 @@ var client *mongo.Client
 // Initialization function that is executed once when the program starts.
 func init() {
 	// Load environment variables from .env.local
-	er := godotenv.Load(".env.local")
+	er := godotenv.Load("../.env.local")
 	if er != nil {
 		fmt.Println("Error loading .env.local file")
 	}
@@ -227,7 +227,7 @@ func DeleteUser(w http.ResponseWriter, r *http.Request) {
 	w.WriteHeader(http.StatusNoContent)
 }
 
-func Main() {
+func main() {
 	// Creating a new Gorilla Mux router.
 	router := mux.NewRouter()
 

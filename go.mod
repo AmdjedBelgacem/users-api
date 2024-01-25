@@ -1,6 +1,6 @@
 module github.com/AmdjedBelgacem/Assessment-Solution
 
-go 1.21.5
+go 1.21.6
 
 require (
 	github.com/felixge/httpsnoop v1.0.4 // indirect
